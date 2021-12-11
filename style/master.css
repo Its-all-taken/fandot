@@ -1,1 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
+@import "reset.css";
+@import url('https://fonts.googleapis.com/css2?family=Rubik&family=Rubik+Mono+One&display=swap');
+
+h1{
+  font-family: 'Rubik Mono One', sans-serif;
+  color: #D2FB51;
+  font-size: 64px;
+  line-height: 111%;
+  text-align: center;
+  grid-column: 1/ span 5;
+}
+.wrap{
+  padding: 136px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-column-gap: 23px;
+  background: #000;
+}
