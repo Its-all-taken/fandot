@@ -1,18 +1,100 @@
 @import "reset.css";
 @import url('https://fonts.googleapis.com/css2?family=Rubik&family=Rubik+Mono+One&display=swap');
 
+body{
+  background: #000;
+}
+h1,h2,p{
+  color: #D2FB51;
+}
 h1{
   font-family: 'Rubik Mono One', sans-serif;
-  color: #D2FB51;
   font-size: 64px;
   line-height: 111%;
   text-align: center;
   grid-column: 1/ span 5;
 }
-.wrap{
-  padding: 136px;
+h2{
+  font-family: 'Rubik', sans-serif;
+  font-size: 24px;
+  text-align: center;
+}
+p{
+  font-family: 'Rubik', sans-serif;
+  font-size: 24px;
+}
+p:nth-of-type(even){
+  grid-column: 5;
+  text-align: right;
+}
+p:nth-of-type(odd){
+  grid-column: 1;
+  text-align: left;
+}
+p:hover{
+  color: #fff;
+  transition: .3s;
+}
+.cover{
+  grid-column: 1/ span 5;
+  height: 100vh;
+}
+.wrap-cover{
+  position: relative;
+  margin-top: -100vh;
+  z-index: 2;
+  /* padding: 9.477vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-column-gap: 23px; */
+}
+.wrap, .wrap > *{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-column-gap: 23px;
-  background: #000;
+}
+.wrap{
+  padding: 9.477vw;
+  padding-top: 4vw;
+  /* display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-column-gap: 23px; */
+}
+.wrap-cover{
+  grid-column: 1/ span 5;
+}
+.logo{
+  margin-bottom: 100px;
+  margin-top: 5.477vw;
+}
+.cover-imags{
+  grid-column: 1/ span 5;
+  position: relative;
+  z-index: 1;
+  height: 100vh;
+  width: 600px;
+  margin: 0 auto;
+}
+.cover-imags img{
+  position: absolute;
+  left: 50%;
+  margin-right: -50%;
+  transform: translateX(-50%);
+}
+.descr p{
+  color: #000;
+  grid-column: 2/ span 3;
+  margin-top: 230px;
+}
+.descr{
+  /* display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-column-gap: 23px; */
+  margin-top: 250px;
+  position: relative;
+  grid-column: 1/ span 5;
+  height: 50vw;
+  background-image: url('../images/descr-bg.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
 }
