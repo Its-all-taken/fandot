@@ -75,9 +75,6 @@ p{
   color: #000;
   grid-column: 2/ span 3;
 }
-.reel p{
-  margin-top: -80px;
-}
 .reel-imags{
   height: 500px;
   position: relative;
