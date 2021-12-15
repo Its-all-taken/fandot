@@ -9,24 +9,24 @@ h1,h2{
 }
 h1{
   font-family: 'Rubik Mono One', sans-serif;
-  font-size: 64px;
+  font-size: 4em;
   line-height: 111%;
   text-align: center;
   grid-column: 1/ span 5;
 }
 h2{
   font-family: 'Rubik', sans-serif;
-  font-size: 24px;
+  font-size: 1.5em;
   text-align: center;
 }
 h3{
   font-family: 'Rubik Mono One', sans-serif;
-  font-size: 48px;
+  font-size: 3em;
   color: #fff;
 }
 p{
   font-family: 'Rubik', sans-serif;
-  font-size: 24px;
+  font-size: 1.5em;
   color: #fff;
 }
 .cover p{
@@ -44,40 +44,56 @@ p{
   color: #fff;
   transition: .3s;
 }
-.cover{
-  grid-column: 1/ span 5;
-  height: 100vh;
-}
 .wrap-cover{
   position: relative;
-  margin-top: -100vh;
   z-index: 2;
-  /* padding: 9.477vw;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-column-gap: 23px; */
 }
 .wrap > *{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-column-gap: 23px;
+  grid-column-gap: 1.603vw;
 }
 .wrap{
   padding: 9.477vw;
   padding-top: 4vw;
 }
-.features,.test,.wrap-cover{
+.features,.test,.wrap-cover,.cover{
   grid-column: 1/ span 5;
 }
 .logo{
   margin-bottom: 100px;
   margin-top: 5.477vw;
 }
+.reel{
+  height: 967px;
+  padding-top: 200px;
+  background: url('../images/reel-bg.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.reel h3, .reel p{
+  color: #000;
+  grid-column: 2/ span 3;
+}
+.reel p{
+  margin-top: -80px;
+}
+.reel-imags{
+  height: 500px;
+  position: relative;
+  display: flex;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  grid-column: 1/ span 5;
+  z-index: 2;
+}
+.reel-imags img{
+  margin-left: 50px;
+}
 .cover-imags{
   grid-column: 1/ span 5;
   position: relative;
   z-index: 1;
-  height: 100vh;
   width: 600px;
   margin: 0 auto;
 }
@@ -93,10 +109,8 @@ p{
   margin-top: 230px;
 }
 .descr{
-  /* display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-column-gap: 23px; */
-  margin-top: 250px;
+  margin-top: 500px;
+  margin-bottom: 250px;
   position: relative;
   grid-column: 1/ span 5;
   height: 50vw;
@@ -113,8 +127,8 @@ p{
 }
 button{
   font-family: 'Rubik Mono One', sans-serif;
-  font-size: 36px;
-  padding: 30px 57px;
+  font-size: 2.25em;
+  padding: 1.875rem 3.5625rem;
   border: 3px solid #D2FB51;
   background-color: #000;
   color: #D2FB51;
@@ -128,13 +142,50 @@ button:hover{
   grid-column: 1/ span 5;
   text-align: center;
   color: #D2FB51;
+  margin-bottom: 100px;
+}
+.test h3:nth-of-type(2){
+  grid-column: 1;
+  text-align: left;
+}
+.testfield{
+  grid-column: 2/ span 4;
+  display: flex;
+  flex-wrap: wrap;
+}
+.testfield img{
+  margin: 5px;
 }
 .buttons{
+  margin-top: 150px;
+  margin-bottom: 250px;
   grid-column: 1/ span 5;
   display: flex;
 }
 .buttons button:first-of-type{
   margin-right: 20px;
+}
+.selectors{
+  grid-column: 1/ span 5;
+  display: flex;
+  justify-content: space-around;
+}
+.selectors > *{
+  opacity: .5;
+}
+.selectors > *:hover{
+  opacity: 1;
+  transition: .3s;
+}
+.comm{
+  margin-bottom: 250px;
+}
+.call{
+  margin: 250px 0px 250px 0px;
+}
+.call button{
+  margin-top: 80px;
+  grid-column: 2/ span 3;
 }
 footer{
   display: flex;
@@ -149,8 +200,13 @@ footer{
 }
 a{
   font-family: Rubik;
-  font-size: 14px;
+  font-size: 0.875em;
   text-decoration: none;
   color: #000;
-  margin-right: 50px;
+  margin-right: 3.125em;
 }
+/* TODO:
+customise scrollbar
+решить второй экран на мобилке
+решить обложку на мобилке
+ */
