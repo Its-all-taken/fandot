@@ -16,5 +16,11 @@ $(document).ready(function(){
           $(".main-imag-c").attr("src","images/doctor.png");
         }
       });
-
+    $(".imag-test").click(function(event) {
+      $(this).toggleClass("imag-test-op");
+      let testSelect = $('.imag-test-op').length;
+      console.log('testSelect');
+      $('.result').empty();
+      $('.result').append(testSelect * 12.5+'%');
     });
+  });
