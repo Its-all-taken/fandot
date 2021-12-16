@@ -1,0 +1,40 @@
+@media all and (max-width: 768px){
+  body{
+    font-size: 10px;
+  }
+  .cover-imags,.wrap-cover p{
+    display: none;
+  }
+  .descr{
+    margin-top: 250px;
+    /* height: 38.5625em; */
+  }
+  .links a{
+    font-size: 1.4em;
+  }
+  .result{
+    width: 130px;
+  }
+}
+@media all and (max-width: 425px){
+  .wrap{
+    width: 100%
+  }
+  h1{
+    word-break: break-word;
+  }
+  .buttons{
+    display: block;
+  }
+  .buttons button:first-of-type{
+    margin-right: 0px;
+    margin-bottom: 40px;
+  }
+  .imag-test{
+    width: 130px;
+    height: 130px;
+  }
+  .reel-imags{
+    height: 300px;
+  }
+}
