@@ -1,10 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik&family=Rubik+Mono+One&display=swap");
 body {
+  padding: 0px 9.477vw 0px 9.477vw;
   background: black;
   overflow: auto;
   display: grid;
-  grid-template-columns: 9.477vw 1fr 1.603vw 1fr 1.603vw 1fr 1.603vw 1fr 1.603vw 1fr 9.477vw;
-  grid-column-gap: 0;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-column-gap: 1.603vw;
   height: auto;
   margin: 0px;
 }
@@ -37,7 +38,7 @@ ul li {
 }
 
 .brand {
-  grid-column-start: 2;
+  grid-column-start: 1;
   color: #D2FB51;
   font-family: Rubik;
   font-size: 3rem;
@@ -47,8 +48,8 @@ ul li {
 .cover {
   position: relative;
   color: #D2FB51;
-  grid-column-start: 4;
-  grid-column-end: 12;
+  grid-column-start: 2;
+  width: 510%;
 }
 .cover p {
   left: 40%;
@@ -85,8 +86,7 @@ p {
 
 .about {
   margin-top: 12%;
-  grid-column-start: 4;
-  grid-column-end: 11;
+  grid-column: 2/ span 5;
 }
 
 .sect {
@@ -102,7 +102,7 @@ p {
 }
 
 .how {
-  grid-column-start: 6;
+  grid-column-start: 2;
   margin-bottom: 14%;
 }
 .how h1 {
@@ -126,8 +126,7 @@ p {
 }
 
 .cloud {
-  grid-column-start: 4;
-  grid-column-end: 11;
+  grid-column: 1/ span 5;
   position: relative;
 }
 
@@ -151,6 +150,7 @@ p {
 
 .flex {
   display: grid;
+  flex-direction: column;
   right: 16%;
   position: absolute;
   top: 0%;
@@ -159,14 +159,103 @@ p {
   align-content: center;
   align-items: center;
 }
-.flex p {
+.text-shape > *{
   color: black;
-  position: absolute;
-  font-family: Rubik;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 24px;
-  line-height: 28px;
 }
-
+.icon{
+  margin-top: 130px;
+  grid-column: 2/ span 4;
+}
+.logotype{
+  margin-top: 150px;
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.logotype:first-of-type{
+  margin: 0;
+}
+.logotype img{
+  height: 277px;
+}
+.usage, .colors{
+  margin-top: 90px;
+  grid-column: 2/ span 4;
+}
+.starwars{
+  position: relative;
+  grid-column: 1/ span 5;
+}
+.bg-row{
+  height: auto;
+  background-image: url("../images/stars.svg");
+  background-size: contain;
+  width: 100%;
+  height: 65vw;
+  background-repeat: repeat-y;
+}
+.bg-square{
+  position: absolute;
+  background-color: #fff;
+  height: 49.5vw;
+  width: 79.7%;
+  top: 12.7%;
+  left: 10%;
+  bottom: 21%;
+  right: 12%;
+}
+.sw-content{
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+.sw-content > *{
+  color: #000;
+}
+.sw-content p:first-of-type{
+  margin-bottom: 70px;
+}
+.sw-content img{
+  margin-top: 50px;
+}
+.usage-logo{
+  margin-top: 130px;
+  display: flex;
+  justify-content: center;
+}
+.usage img:nth-of-type(1){
+  margin-top: 165px;
+  margin-bottom: 30px;
+}
+.usage p{
+  width: 70%;
+}
+.usage img:nth-of-type(2){
+  margin-top: 160px;
+}
+.color-sample-s{
+  margin-top: 96px;
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.color-sample{
+  flex: 50%;
+}
+.color-sample:last-of-type{
+  margin-top: 115px;
+}
+.colors h1:first-of-type{
+  margin-top: 96px;
+}
+.colors h1:nth-of-type(2){
+  margin-top: 150px;
+  margin-bottom: 50px;
+}
+.colors  h2{
+  margin-bottom: 50px;
+}
 /*# sourceMappingURL=guide.css.map */
