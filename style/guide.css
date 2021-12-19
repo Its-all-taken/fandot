@@ -180,10 +180,7 @@ p {
 .logotype img{
   height: 277px;
 }
-.usage, .colors{
-  margin-top: 90px;
-  grid-column: 2/ span 4;
-}
+
 .starwars{
   position: relative;
   grid-column: 1/ span 5;
@@ -199,9 +196,9 @@ p {
 .bg-square{
   position: absolute;
   background-color: #fff;
-  height: 49.5vw;
+  height: 49vw;
   width: 79.7%;
-  top: 12.7%;
+  top: 12.5%;
   left: 10%;
   bottom: 21%;
   right: 12%;
@@ -248,6 +245,9 @@ p {
 .color-sample:last-of-type{
   margin-top: 115px;
 }
+.colors{
+  margin-bottom: 200px;
+}
 .colors h1:first-of-type{
   margin-top: 96px;
 }
@@ -257,5 +257,87 @@ p {
 }
 .colors  h2{
   margin-bottom: 50px;
+}
+.samples{
+  display: flex;
+}
+.samples > *{
+  flex: 50%;
+}
+.rubic{
+  margin-right: 50px;
+}
+.rubic *{
+  color: #000;
+  font-family: "Rubik", sans-serif;
+}
+.monorubic *{
+  color: #000;
+  font-family: Rubik Mono One;
+}
+h4{
+  font-size: 1em
+}
+.typo-rates{
+  display: flex;
+  align-items: center;
+}
+.typo-rates:first-of-type{
+  margin-top: 100px;
+}
+.typo-line{
+  margin: 0 20px 0 20px;
+  height: 1px;
+  width: 187px;
+  background-color: #fff;
+}
+.typo-rates p:nth-of-type(2){
+  flex: 20%;
+}
+.grids h1:nth-of-type(2){
+  margin-top: 100px;
+}
+.grid-build div{
+  display: flex;
+  align-items: baseline;
+}
+.grid-build h3{
+  margin-right: 20px;
+  color: #fff;
+  font-family: Rubik;
+  font-size: 4em;
+}
+.grid-section{
+  margin-top: 150px;
+}
+.grid-section img{
+  margin-top: 50px;
+}
+.image-samples{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.image-smpl{
+  flex: 50%;
+}
+.image-smpl p{
+  margin: 0;
+  margin-top: 20px;
+  text-align: center;
+}
+.compoz-build{
+  margin-left: 50px;
+  display: block !important;
+  width: 70%;
+}
+
+.usage, .colors, .typo-style, .grids, .imagery, .composition, .tone{
+  margin-top: 150px;
+  grid-column: 2/ span 4;
+}
+.sect p:first-of-type, .grids p:first-of-type, .colors p:first-of-type, .p-f{
+  width: 80%;
 }
 /*# sourceMappingURL=guide.css.map */
