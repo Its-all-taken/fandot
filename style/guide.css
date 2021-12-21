@@ -15,19 +15,21 @@ body{
 ul {
   padding: 0;
 }
-ul li, a {
+a {
   font-family: "Rubik", sans-serif;
-  color: white;
   font-family: Rubik;
   font-size: 1.5rem;
   line-height: 1.75rem;
   text-decoration: none;
   list-style-type: none;
 }
-a{
+footer a{
   color: #000;
   font-size: 1em;
   margin-left: 20px;
+}
+ul li a{
+    color: #fff;
 }
 .menu {
   position: fixed;

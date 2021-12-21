@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <title></title>
     <link rel="stylesheet" href="style/guide.css"></link>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/scroll.js"></script>
   </head>
   <body>
     <div class="wrap">
@@ -12,7 +14,7 @@
         <p>стайлгайд</p>
         <div class="img"></div>
       </div>
-      <div class="about">
+      <div class="about" id="1">
         <div class="sect">
           <h2>о бренде</h2>
           <h1>о fan.</h1>
@@ -54,7 +56,7 @@
           <h1>миссия</h1>
           <p>Развивать творческое самовыражение в контексте продвижения культуры вымышленных вселенных.</p>
         </div>
-        <div class="cloud">
+        <div class="cloud" id="2">
           <div class="form">
           </div>
           <div class="form">
@@ -114,7 +116,7 @@
         <img src="images/logo-options/logo-colors.svg" alt="">
         <p>Цветовые сочетания в логотипе.</p>
       </div>
-      <div class="colors">
+      <div class="colors" id="3">
         <h2>цвета</h2>
         <p>В&nbsp;основе выбора всего трех цветов лежит идея лаконичности. Белый и&nbsp;черный&nbsp;&mdash; формализм Fan. Зеленый&nbsp;же&nbsp;&mdash; технократичность и&nbsp;фантастичность.</p>
         <h1>Палитра</h1>
@@ -138,7 +140,7 @@
         <h1>Соотношение</h1>
         <img src="images/colors/scale.svg" alt="">
       </div>
-      <div class="typo starwars">
+      <div class="typo starwars" id="4">
         <div class="bg-row"></div>
         <div class="bg-square"></div>
         <div class="sw-content">
@@ -175,7 +177,7 @@
           <p>Fan. предоставляет возможность создания бесконечного множества таймлайнов относящихся к&nbsp;одному и&nbsp;тому&nbsp;же продукту. Смотри разные версии, компилируй, сравнивай и&nbsp;создавай своё.</p>
         </div>
       </div>
-      <div class="grids">
+      <div class="grids" id="5">
         <h2>Сетка</h2>
         <h1>Концепция</h1>
         <p>Наш символ (тайного сообщества)&nbsp;&mdash; основной элемент айдентики. В&nbsp;нем виден весь концепт медиа сервиса. На&nbsp;нем и&nbsp;строится сетка.</p>
@@ -212,7 +214,7 @@
           <img src="images/grids/grid-versions.png" alt="">
         </div>
       </div>
-      <div class="imagery">
+      <div class="imagery" id="6">
         <h2>изображения</h2>
         <p class="p-f">Все изображения с&nbsp;персонажами должны содержать обтравленную фигуру человека (существа), смотрящего на&nbsp;зрителя</p>
         <div class="image-samples">
@@ -237,7 +239,7 @@
           </div>
         </div>
       </div>
-      <div class="composition">
+      <div class="composition" id="7">
         <h2>композиция</h2>
         <h1>вариации</h1>
         <div class="grid-build">
@@ -271,7 +273,7 @@
           </div>
         </div>
       </div>
-      <div class="tone">
+      <div class="tone" id="8">
         <h2>Tone of voice</h2>
         <p class="p-f">Fan. &mdash;&nbsp;это пространство для коммуникации, дискуссии и&nbsp;увлечений. Мы&nbsp;не&nbsp;просто медиа-сервис, потому что не&nbsp;могли&nbsp;бы существовать без коммьюнити. Наша миссия&nbsp;&mdash; создать среду для творчества и&nbsp;самовыражения. Именно поэтому мы&nbsp;всегда обращаемся к&nbsp;пользователю как к&nbsp;другу.</p>
         <div class="texsts">
@@ -292,7 +294,7 @@
           </div>
         </div>
       </div>
-      <div class="merch">
+      <div class="merch" id="9">
         <h2>Носители</h2>
         <h1>физические</h1>
         <img src="images/merch/first.jpg" alt="">
@@ -304,21 +306,19 @@
         <img src="images/merch/fb.jpg" alt="">
         <img src="images/merch/ig-tw.png" alt="">
       </div>
-
-      </div>
+    </div>
     <div class="menu">
       <ul>
-        <li>О бренде</li>
-        <li>Логотип</li>
-        <li>Цвета</li>
-        <li>Типографика</li>
-        <li>Сетка</li>
-        <li>Изображения</li>
-        <li>Композиция</li>
-        <li>Tone of voice</li>
-        <li>Носители</li>
+        <li><a class="menu-a" href="#1">О бренде</a></li>
+        <li><a class="menu-a" href="#2">Знак</a></li>
+        <li><a class="menu-a" href="#3">Палитра</a></li>
+        <li><a class="menu-a" href="#4">Типографика</a></li>
+        <li><a class="menu-a" href="#5">Сетка</a></li>
+        <li><a class="menu-a" href="#6">Изображения</a></li>
+        <li><a class="menu-a" href="#7">Композиция</a></li>
+        <li><a class="menu-a" href="#8">Tone of voice</a></li>
+        <li><a class="menu-a" href="#9">Носители</a></li>
       </ul>
-
     </div>
     <footer>
       <img class="logo-f" src="images/logo-bsvg.svg" alt="logo">
@@ -330,5 +330,4 @@
       </div>
     </footer>
   </body>
-
 </html>
