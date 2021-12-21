@@ -54,6 +54,8 @@ p{
   grid-column-gap: 1.603vw;
 }
 .wrap{
+  max-width: 1290px;
+  margin: 0 auto;
   padding: 9.477vw;
   padding-top: 4vw;
 }
