@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik&family=Rubik+Mono+One&display=swap");
-body {
+.wrap {
   padding: 0px 9.477vw 0px 9.477vw;
   background: black;
   overflow: auto;
@@ -9,11 +9,13 @@ body {
   height: auto;
   margin: 0px;
 }
-
+body{
+  margin: 0;
+}
 ul {
   padding: 0;
 }
-ul li {
+ul li, a {
   font-family: "Rubik", sans-serif;
   color: white;
   font-family: Rubik;
@@ -22,7 +24,11 @@ ul li {
   text-decoration: none;
   list-style-type: none;
 }
-
+a{
+  color: #000;
+  font-size: 1em;
+  margin-left: 20px;
+}
 .menu {
   position: fixed;
   left: 9.477vw;
@@ -351,6 +357,24 @@ h4{
 .texsts-section:nth-of-type(2){
   margin-left: 25%;
   width: 75%;
+}
+.merch img{
+  margin-bottom: 30px;
+  width: 117.8%;
+}
+footer{
+  padding: 50px 0 50px 0;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  width: 100%;
+  background-color: #D2FB51;
+}
+.logo-f{
+  margin-left: 9.477vw;
+}
+.links{
+  margin-right: 9.477vw;
 }
 
 .usage, .colors, .typo-style, .grids, .imagery, .composition, .tone, .merch{
