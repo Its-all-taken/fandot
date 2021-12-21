@@ -38,11 +38,11 @@ ul li a{
 }
 
 .img {
-  background: url("../images/cover.png");
+  background: url("../images/reel/red-hd.jpg");
   height: 100vh;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center top;
+  background-position: center;
 }
 
 .brand {
