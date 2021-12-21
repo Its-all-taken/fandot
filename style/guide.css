@@ -172,6 +172,7 @@ p {
 }
 .icon{
   margin-top: 130px;
+  margin-bottom: 130px;
   grid-column: 2/ span 4;
 }
 .logotype{
