@@ -20,6 +20,22 @@
   }
 }
 @media all and (max-width: 425px){
+  .cover{
+    height: 90vh;
+  }
+  .cover-imags{
+    height: 90vh;
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+  }
+  .main-imag-c{
+    height: 100%;
+  }
+  .cover h1{
+    position: absolute;
+    top: 30vh;
+  }
   .test{
     margin-top: 100px;
   }
@@ -51,7 +67,7 @@
   /* .reel-imags{
     margin-top: -250px;
   } */
-  .cover-imags{
+  .wrap-cover h2{
     display: none;
   }
   .wrap{
@@ -105,9 +121,9 @@
   footer{
     display: none;
   }
-  .cover-imags{
+  /* .cover-imags{
     display: none;
-  }
+  } */
   .wrap > * {
     display: block;
   }
