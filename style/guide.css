@@ -203,14 +203,14 @@ p {
   background-repeat: repeat-y;
 }
 .bg-square{
-  position: absolute;
-  background-color: #fff;
-  height: 49vw;
-  width: 79.7%;
-  top: 12.5%;
-  left: 10%;
-  bottom: 21%;
-  right: 12%;
+    position: absolute;
+    background-color: #fff;
+    height: 49.6vw;
+    width: 79.7%;
+    top: 12.7%;
+    left: 10%;
+    bottom: 21%;
+    right: 12%;
 }
 .sw-content{
   top: 50%;
