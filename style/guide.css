@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik&family=Rubik+Mono+One&display=swap");
+@font-face {
+  font-family: 'Gymkhana';
+  src:  url('../fonts/gymkhana-bk.ttf') format('truetype');
+}
 .wrap {
   padding: 0px 9.477vw 0px 9.477vw;
   background: black;
@@ -172,7 +176,7 @@ p {
 }
 .icon{
   margin-top: 130px;
-  margin-bottom: 130px;
+  /* margin-bottom: 130px; */
   grid-column: 2/ span 4;
 }
 .logotype{
@@ -380,11 +384,215 @@ footer{
   margin-right: 9.477vw;
 }
 
-.usage, .colors, .typo-style, .grids, .imagery, .composition, .tone, .merch{
+.usage, .colors, .typo-style, .grids, .imagery, .composition, .tone, .merch, .didgital{
   margin-top: 150px;
   grid-column: 2/ span 4;
+  /* overflow-x: hidden; */
 }
 .sect p:first-of-type, .grids p:first-of-type, .colors p:first-of-type, .p-f{
   width: 80%;
 }
 /*# sourceMappingURL=guide.css.map */
+
+/* 4term updates */
+.logoss h3{
+  color: white;
+  font-family: 'Rubik';
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+}
+.logoss{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.logo-opt:nth-of-type(1){
+  flex: 1 0 100%;
+}
+.logo-opt:nth-of-type(even){
+  padding-right: 2%;
+}
+.logo-opt img{
+  height: 214px;
+  width: 100%;
+}
+.logo-opt{
+  position: relative;
+  flex: 1 0 45%;
+  margin-bottom: 100px;
+}
+.logoss p{
+  font-size: 20px;
+}
+.logoss h3{
+  margin: 50px 0px 20px 0px
+}
+.didgitalc-colors{
+  margin-top: 100px;
+  /* justify-content: space-between; */
+  display: flex;
+  flex: 1 0 50%;
+  flex-wrap: wrap;
+}
+.digColSamp{
+  width: 50%;
+  color: #FFFFFF;
+  display: flex;
+  margin-bottom: 40px;
+}
+.digColText{
+  margin-left: 32px;
+}
+.digColText *{
+  margin: 0;
+}
+.digColSamp h5{
+  font-family: 'Rubik';
+  font-size: 32px;
+  margin-bottom:10px;
+}
+.digColSamp h6{
+  font-family: 'Gymkhana';
+  font-size: 16px;
+  margin-bottom:10px;
+}
+.digColSamp p{
+  font-size: 14px;
+}
+.round{
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+}
+#r1{
+  background: #030303;
+  border: 1px solid #D1D1D1;
+}
+#r2{
+  background: #BBBBBB;
+}
+#r3{
+  background: #1E1E1E;
+}
+#r4{
+  background: #8D8D93;
+}
+#r5{
+  background: #272728;
+}
+#r6{
+  background: rgba(0, 0, 0, 0.6);
+  border: 1px solid #D2FB51;
+}
+#r7{
+  background: #141515;
+}
+#r8{
+  background: linear-gradient(360deg, #1E1E1E 0%, rgba(30, 30, 30, 0) 100%);
+}
+#r9{
+  background: #FB5151;
+}
+.gymkhana-sample{
+  margin-top: 90px;
+  width: 330px;
+}
+.gymkhana-sample h1 {
+  font-family: 'Gymkhana';
+  font-size: 48px;
+  line-height: 58px;
+  color: #FFFFFF;
+  text-transform: capitalize;
+}
+.gymkhana-sample p{
+  font-family: 'Gymkhana';
+  font-size: 24px;
+  line-height: 29px;
+  color: #FFFFFF;
+}
+.gymkhana-usage{
+  margin-top: 190px;
+}
+.usage-sample{
+  margin-bottom: 74px;
+  display: grid;
+  column-gap: 23px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.usage-sample h1{
+  argin: auto 0;
+  grid-column: 1;
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 108%;
+  color: #FFFFFF;
+  text-transform: none;
+}
+.usage-sample div{
+  margin: auto 0;
+  grid-column: 2 / span 3;
+  color: white;
+}
+.usage-sample p{
+  grid-row: 2;
+  grid-column: 1 / span 5;
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 108%;
+  color: #FFFFFF;
+  opacity: 0.8;
+}
+#s1{
+  font-family: 'Gymkhana';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 96px;
+  text-transform: uppercase;
+}
+#s2{
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+}
+#s3{
+  font-family: 'Gymkhana';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+}
+#s4{
+  font-family: 'Gymkhana';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+}
+#s5{
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+}
+#s6{
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+}
+#s7{
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+}
+#s8{
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+}
