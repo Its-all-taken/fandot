@@ -629,3 +629,6 @@ footer a:first-of-type{
 .didgital{
   margin-bottom: 150px;
 }
+.m-imagery img{
+  width: 100%;
+}
